@@ -1,8 +1,8 @@
 # Handler testing example for Kitura
 This example implements two new testing objects which are influenced by Go's net/httptest package.  
 Sources/HTTPTest contains two classes:  
-* Request.swift - a stubbed instance of ServerRequest   
-* ResponseRecorder.swift - a stubbed instance of ServerResponse  
+* [Request.swift](https://github.com/nicholasjackson/KituraTesting/blob/master/Sources/HTTPTest/Request.swift) - a stubbed instance of ServerRequest   
+* [ResponseRecorder.swift](https://github.com/nicholasjackson/KituraTesting/blob/master/Sources/HTTPTest/ResponseRecorder.swift) - a stubbed instance of ServerResponse  
 
 The intention behind these packages is to enable testing of handlers without the requirement to run through the Router.  It gives fast and simple Unit level testing allowing dependencies to be easilly replaced.
 
