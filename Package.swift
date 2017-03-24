@@ -17,13 +17,13 @@
 import PackageDescription
 
 let package = Package(
-  name: "Kitura-Starter",
+  name: "Server",
   targets: [
-    Target(name: "Kitura-Starter", dependencies: [])
-  ],
+        Target(name: "KituraServer", dependencies: ["KituraStarter"]),
+        Target(name: "KituraStarterTests", dependencies: ["HTTPTest", "KituraStarter"])
+    ],
   dependencies: [
     .Package(url: "https://github.com/IBM-Swift/Kitura.git", majorVersion: 1, minor: 6),
     .Package(url: "https://github.com/IBM-Swift/HeliumLogger.git", majorVersion: 1),
-    .Package(url: "https://github.com/IBM-Bluemix/cf-deployment-tracker-client-swift.git", majorVersion: 2)
   ]
 )
